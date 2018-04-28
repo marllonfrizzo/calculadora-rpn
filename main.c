@@ -183,7 +183,7 @@ int exponencial(int p_num1, int p_num2) {
 ** @param O parâmetro p_num  recebe o valor de NUM1 .
 ** @return A função retorna o calculo fatorial do parâmetro p_num, sendo que este resultado é um valor inteiro.
 */
-int fatorial (p_num) {
+int fatorial (int p_num) {
 	int contador, resultado = 0, variavel_auxiliar2 = 0, variavel_auxiliar_R = 0;
 	if (p_num == 0 || p_num == 1) {
 		return 1;
@@ -267,8 +267,8 @@ int resto(int p_num1,int p_num2) {
 }
 
 int main(){
-    //system("clear");
-    system("cls");
+    system("clear"); // Compilar para GNU/Linux
+    //system("cls"); // Compilar para Windows
     int numero_inteiro = 0, numero2_inteiro = 0, flag_raiz = 0, flag_fatorial = 0, flag_finaliza1 = 0, flag_finaliza2 = 0, valida_operacao = 0;
     int resultado = 0;
     char operador, numero[8], numero2[8];
